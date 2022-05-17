@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link rel="shortcut icon" href="/img/iconfinder_letter_N_blue_1553088.png">
+<title>Nilan's ear piercing ceremony</title>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/confetti.js"></script>
+<script type="text/javascript">
+
+  (function(){
+
+      show = function(){
+        setTimeout(hide, 5000); // 5 seconds
+      },
+
+      hide = function(){
+    	  document.getElementById("myDiv").style.display = "none";
+    	  document.getElementById("parallax").style.visibility = "visible";
+      };
+
+    show();
+  })();
+
+</script>
+<style>
+.parallax {
+	/* The image used */
+	background-image: url("/img/nilan_minion.png");
+	/* Set a specific height */
+	height: 2200px;
+	/* Create the parallax scrolling effect */
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	visibility: hidden;
+}
+
+.center {
+	text-align : center;
+	margin-left: 12%;
+	/*bottom: 23%;
+	position: fixed;*/
+	font-size: 50px;
+	width: 80%;
+	color: #4E6E86;
+	font-family: cursive;
+}
+
+.link {
+	font-style: italic;
+}
+
+.hidden {
+	height: 75%;
+}
+</style>
+</head>
+
+<body style="background: #F4E060">
+	<div id="myDiv" style="background: #F4E060; position: fixed; margin-top: 50%; margin-left: 10%; width: 100%;display:block; z-index: +1">
+		<img src="/img/loadinggram_14_minions_motvion.gif" >
+	</div>
+	<div class="parallax" id="parallax">
+		<header class="hidden"></header>
+		<footer class="center">We cordially invite you for
+			Nilan's ear piercing ceremony.<br>
+			Please join us in wishing Nilan the very best during this auspicious occasion.
+			<br><br>
+			Venue : <a class="link" href="https://goo.gl/maps/2UwMrh44eb6Abpyx8">VNS Hall, Anna nagar, Chennai</a><br>
+			Timing : <a class="link" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MmM4dHE5NHFsaWE1M29vOG51dmZjY2lvMm0gYW5hbnRobmFtYmlAbQ&tmsrc=ananthnambi%40gmail.com">Dec 1st, Sunday, 11 AM</a></footer>
+	</div>
+</body>
+</html>
